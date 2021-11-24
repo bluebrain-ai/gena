@@ -10,13 +10,12 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 import lombok.Data;
- 
+
 @Component
 @Entity
 @Table(name = "GENACCOUNT")
 
 @Data
-
 
 public class GenAccount {
 
