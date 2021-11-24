@@ -1091,3 +1091,26 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: GenAccoun is not
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
 	... 58 common frames omitted
 
+2021-11-24 21:09:50.693  INFO 32416 --- [main] c.i.poc.demo.GenerateAccountApplication  : Starting GenerateAccountApplication using Java 14 on LAPTOP-1RPTTI2Q with PID 32416 (D:\BLUESCRIPT_DEMO\End-2-EndTestData\JavaMicroservices\Customer\GenAccount\demo\target\classes started by jarvi in d:\BLUESCRIPT_DEMO\End-2-EndTestData\JavaMicroservices\Customer\GenAccount\demo)
+2021-11-24 21:09:50.695  INFO 32416 --- [main] c.i.poc.demo.GenerateAccountApplication  : No active profile set, falling back to default profiles: default
+2021-11-24 21:09:51.368  INFO 32416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-24 21:09:51.381  INFO 32416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-11-24 21:09:51.890  INFO 32416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9099 (http)
+2021-11-24 21:09:51.897  INFO 32416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-24 21:09:51.897  INFO 32416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-11-24 21:09:51.986  INFO 32416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-24 21:09:51.987  INFO 32416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1260 ms
+2021-11-24 21:09:52.112  INFO 32416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-24 21:09:52.152  INFO 32416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-24 21:09:52.237  INFO 32416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-24 21:09:52.308  INFO 32416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-24 21:09:52.357  INFO 32416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-24 21:09:52.368  INFO 32416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-11-24 21:09:52.723  INFO 32416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-24 21:09:52.728  INFO 32416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-24 21:09:52.877  WARN 32416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-24 21:09:53.412  INFO 32416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9099 (http) with context path ''
+2021-11-24 21:09:53.587  INFO 32416 --- [main] c.i.poc.demo.GenerateAccountApplication  : Started GenerateAccountApplication in 3.147 seconds (JVM running for 3.577)
+2021-11-24 21:10:15.578  INFO 32416 --- [http-nio-9099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-24 21:10:15.578  INFO 32416 --- [http-nio-9099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-24 21:10:15.579  INFO 32416 --- [http-nio-9099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
