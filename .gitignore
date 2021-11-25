@@ -32,3 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 log/application.log
+src/main/resources/application.properties
+log/application.log.2021-11-24.0.gz
+log/application.log

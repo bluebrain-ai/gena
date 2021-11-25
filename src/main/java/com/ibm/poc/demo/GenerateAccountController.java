@@ -31,8 +31,9 @@ public class GenerateAccountController {
 
     @GetMapping(value = "/genacustnum")
     public ResponseEntity<Long> GenerateAccount() {
-
+        
         customerNumber = customerNumber + 1;
+        log.warn("GennaAccount geneated:"+customerNumber);
         // try {
         // // customerNumber = genAccountRepo.findAll().get(0).getCustomerNumer();
 
