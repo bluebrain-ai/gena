@@ -1,7 +1,9 @@
 package com.ibm.poc.demo;
 
-import com.ibm.poc.demo.repository.GenAccount;
-//import com.ibm.poc.demo.repository.IgenerateAccountRepository;
+import javax.xml.bind.annotation.XmlElement.DEFAULT;
+
+import com.ibm.poc.demo.entity.GenAccount;
+import com.ibm.poc.demo.repository.GenAccountRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,36 +29,24 @@ import lombok.extern.log4j.Log4j2;
 public class GenerateAccountController {
     // @Autowired
     // private IgenerateAccountRepository genAccountRepo;
-    private long customerNumber = 5001;
+    // private long customerNumber = 5001;
+    @Autowired
+    private GenAccountRepository genaAccountRepo;
 
     @GetMapping(value = "/genacustnum")
     public ResponseEntity<Long> GenerateAccount() {
-        
-        customerNumber = customerNumber + 1;
-        log.warn("GennaAccount geneated:"+customerNumber);
-        // try {
-        // // customerNumber = genAccountRepo.findAll().get(0).getCustomerNumer();
 
-        // /** add customer generation strategy */
         // customerNumber = customerNumber + 1;
+        Long customerNumer = 0L;
+        GenAccount g = new GenAccount();
+        try {
+            customerNumer = genaAccountRepo.save(g).getCustomerNumer();
+        } catch (Exception e) {
+            log.error(e);
+        }
 
-        // } catch(IndexOutOfBoundsException ie)
-        // {
-        // customerNumber = customerNumber + 1;
-        // }catch (Exception e) {
-        // log.error("GenAccount Customer Retrival failed", e);
-        // }
-
-        // try {
-        // //GenAccount g = new GenAccount();
-        // //g.setCustomerNumer(customerNumber);
-        // genAccountRepo.updateCustomerNumber(customerNumber);
-        // } catch (Exception e) {
-        // log.error("Generation failed", e);
-        // throw new RuntimeException("Generation Failed for customer Number");
-        // }
-
-        return new ResponseEntity<>(customerNumber, HttpStatus.OK);
+        log.warn("customerNumer:" + customerNumer);
+        return new ResponseEntity<>(customerNumer, HttpStatus.OK);
 
     }
 }

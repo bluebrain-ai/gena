@@ -1,5 +1,5 @@
 HELP.md
-target/
+*.class
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -35,3 +35,12 @@ log/application.log
 src/main/resources/application.properties
 log/application.log.2021-11-24.0.gz
 log/application.log
+*.log
+*.lst
+*.gz
+target/formatter-maven-cache.properties
+log/application.log
+target/surefire-reports/com.ibm.poc.demo.DemoApplicationTests.txt
+target/surefire-reports/TEST-com.ibm.poc.demo.DemoApplicationTests.xml
+target/maven-archiver/pom.properties
+target/classes/application.properties
